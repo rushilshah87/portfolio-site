@@ -16,10 +16,6 @@ body {
 	color: var(--forecolor);
 }
 
-#navbar-img {
-	filter: grayscale(1) invert(100%);
-}
-
 @media (prefers-color-scheme: light) {
 	:root {
 		--backcolor: rgb(235, 235, 235);
@@ -29,6 +25,10 @@ body {
 	body {
 		background-color: var(--backcolor);
 		color: var(--forecolor);
+	}
+
+	#navbar-img {
+		filter: grayscale(1) invert(100%);
 	}
 }
 
@@ -53,20 +53,7 @@ body {
 	padding: 0px;
 }
 
-/* 
-#full-screen {
-	width: 100%;
-	height: 100%;
-} */
-
 #center-on-screen {
-	/* text-align: center;
-	position: relative;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%); */
-
 	text-align: center;
 	line-height: 100vh;
 	width: 100%;
@@ -99,14 +86,15 @@ body {
 	width: 95vw;
 	overflow: hidden;
 	z-index: 5;
+	height: 8vh !important;
 }
 
 #navbar {
-	border-bottom: solid 1px var(--forecolor);
+	border-bottom: solid 2px var(--forecolor);
 	padding-left: 0px;
 	padding-right: 0px;
 	background: var(--backcolor);
-	height: 6vh !important;
+	height: 7vh !important;
 }
 
 #container {
@@ -121,7 +109,7 @@ body {
 #nav-right {
 	float: right;
 	width: 80vw;
-	line-height: 6vh;
+	line-height: 7vh;
 	text-align: right;
 }
 
@@ -134,18 +122,16 @@ body {
 	margin-right: 2vw;
 }
 
-@media (prefers-color-scheme: dark) {
-	#navbar-img {
-		padding: 0px;
-		width: 3vw;
-		filter: grayscale(1) invert(100%);
-	}
-}
-
 #navbar-img {
 	padding: 0px;
-	width: 3vw;
 	margin-left: 1vw;
+	width: 5vw;
+	cursor: pointer;
+	position: relative;
+	height: 7vh;
+	// paint-order: stroke;
+	// stroke: var(--forecolor);
+	// stroke-width: 2px;
 
 	svg {
 		position: relative;
@@ -154,7 +140,7 @@ body {
 	}
 
 	&:hover {
-		width: 3.2vw;
+		width: 105%;
 		transition: width .1s;
 		-webkit-transition: width .1s;
 		/* Safari */
@@ -188,33 +174,41 @@ body {
 	&--linkedin {
 		color: #2d76b0;
 	}
+
 	&--github {
 		color: var(--forecolor);
 	}
+
 	&--instagram {
 		color: #9a2970;
 	}
+
 	&--dribbble {
 		color: #b53561;
 	}
+
 	& .social-svg {
 		width: 4.8rem;
 		height: 4.8rem;
+
 		& .social-group {
 			&__icon {
 				fill: var(--forecolor);
 				transition: all .2s;
 			}
+
 			&__inner-circle {
 				fill: transparent;
 				transition: all .2s;
 			}
+
 			&__outline {
 				stroke: var(--forecolor);
 				transform-origin: 50% 50%;
 				transition: all .2s;
 			}
 		}
+
 		&:hover,
 		&:active,
 		&:focus {
@@ -223,13 +217,16 @@ body {
 					fill: var(--backcolor);
 					transition: all .45s;
 				}
+
 				&__inner-circle {
 					fill: currentColor;
 					transition: all .45s;
+
 					&--instagram {
 						fill: url(#simpleInsta) !important;
 					}
 				}
+
 				&__outline {
 					stroke: currentColor;
 					transform: scale(1.1);
@@ -251,14 +248,29 @@ body {
 	overflow: hidden;
 }
 
-.welcome {
-	font-size: 60px;
-	margin-bottom: 0px;
+#header-welcome {
+	font-size: 108px;
+	margin-top: 12vh;
+	margin-bottom: 4vh;
+}
+
+#header-intro {
+	margin-left: 2.5vw;
+	padding-left: 2.5vw;
+	border-left: 2px solid var(--forecolor);
+	max-width: 50vw;
+	line-height: 180%;
+}
+
+.vl {
+	height: 100% !important;
+	background: linear-gradient(var(--forecolor), var(--forecolor)) no-repeat center/2px 100%;
 }
 
 .home-section {
 	height: 90vh;
 	margin: auto 10%;
+
 }
 
 .internal-link::before {
