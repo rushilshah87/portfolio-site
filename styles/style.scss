@@ -9,6 +9,7 @@
 :root {
 	--forecolor: rgb(235, 235, 235);
 	--backcolor: rgb(35, 35, 35);
+	--accent: rgb(173, 76, 76);
 }
 
 body {
@@ -113,6 +114,14 @@ body {
 	text-align: right;
 }
 
+.floatleft {
+	float: left;
+}
+
+.floatright {
+	float: right;
+}
+
 #nav-center {
 	margin: 0 auto;
 	width: 100px;
@@ -129,9 +138,6 @@ body {
 	cursor: pointer;
 	position: relative;
 	height: 7vh;
-	// paint-order: stroke;
-	// stroke: var(--forecolor);
-	// stroke-width: 2px;
 
 	svg {
 		position: relative;
@@ -140,7 +146,7 @@ body {
 	}
 
 	&:hover {
-		width: 105%;
+		width: 5.5vw;
 		transition: width .1s;
 		-webkit-transition: width .1s;
 		/* Safari */
@@ -223,7 +229,7 @@ body {
 					transition: all .45s;
 
 					&--instagram {
-						fill: url(#simpleInsta) !important;
+						fill: url(#simpleInsta);
 					}
 				}
 
@@ -255,16 +261,25 @@ body {
 }
 
 #header-intro {
-	margin-left: 2.5vw;
-	padding-left: 2.5vw;
-	border-left: 2px solid var(--forecolor);
-	max-width: 50vw;
+	margin-left: 3vw;
+	padding-left: 3vw;
+	border-left: 2px solid var(--accent);
+	width: 45vw;
 	line-height: 180%;
+}
+
+#header-img {
+	max-width: 23vw;
+}
+
+#header-img-container {
+	margin-top: 16vh;
 }
 
 .vl {
 	height: 100% !important;
-	background: linear-gradient(var(--forecolor), var(--forecolor)) no-repeat center/2px 100%;
+	// background: linear-gradient(var(--forecolor), var(--forecolor)) no-repeat center/2px 100%;
+	background: linear-gradient(var(--accent), var(--accent)) no-repeat center/2px 100%;
 }
 
 .home-section {
@@ -273,27 +288,65 @@ body {
 
 }
 
-.internal-link::before {
+.nav-link::before {
 	transform: scaleX(0);
 	transform-origin: bottom right;
 }
 
-.internal-link:hover::before {
+.nav-link:hover::before {
 	transform: scaleX(1);
 	transform-origin: bottom left;
 }
 
-.internal-link::before {
+.nav-link::before {
 	content: " ";
-	display: block;
 	position: absolute;
-	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	inset: 0 0 0 0;
-	background: none;
-	border-bottom: 2px solid rgb(187, 114, 114);
-	z-index: 1;
+	border-bottom: 2px solid var(--accent);
 	transition: transform .3s ease;
+}
+
+.section-title {
+	font-size: 56px;
+}
+
+#sub-experience {
+	margin: 0 10vw;
+	margin-top: 10vh;
+	display: flex;
+}
+
+#experience-tabs {
+	list-style-type: none;
+	width: 25vw;
+}
+
+.selected {
+	box-shadow: -2px 0px 0px 0px var(--accent);
+}
+
+.tabs-selector:hover {
+	background-color: rgb(53, 53, 53);
+}
+
+li.tabs-selector {
+	padding: 2vh 10px;
+}
+
+#experience-content {
+	width: 100%;
+	// border: 2px solid red;
+	margin: 1em 0;
+}
+
+#experience-content-title {
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+#experience-content-span {
+	margin-top: 1vh;
+	color:rgb(173, 173, 173)
 }

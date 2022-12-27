@@ -1,0 +1,45 @@
+{
+	"experiences": [
+		{
+			"company": "Selene Finance",
+			"position": "Trade & Portfolio Analyst",
+			"span": "June 2022 - Present",
+			"experiences": [
+				"Cracked tapes",
+				"Database work for non-qm",
+				"Developed loan outcome predictor",
+				"RTL risk report"
+			]
+		},
+		{
+			"company": "Shah-Carlton Development",
+			"position": "Co-Founder",
+			"span": "April 2021 - Present",
+			"experiences": []
+		},
+		{
+			"company": "Web Dev Carolina",
+			"position": "Co-Founder and Treasurer",
+			"span": "April 2020 - May 2022",
+			"experiences": []
+		},
+		{
+			"company": "Camping World",
+			"position": "FP&A Intern",
+			"span": "August 2021 - May 2022",
+			"experiences": []
+		},
+		{
+			"company": "TAMID",
+			"position": "Investment Committee",
+			"span": "September 2018 - September 2021",
+			"experiences": []
+		},
+		{
+			"company": "Red Ventures",
+			"position": "Product Analyst",
+			"span": "June - August 2021",
+			"experiences": []
+		}
+	]
+}

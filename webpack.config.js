@@ -61,7 +61,7 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			template: "public/index.html",
 			favicon: "assets/favicon.ico",
-			title: "Rushil",
+			title: "Rushil Shah",
 		})
 	],
 }
