@@ -15,31 +15,49 @@
 			"company": "Shah-Carlton Development",
 			"position": "Co-Founder",
 			"span": "April 2021 - Present",
-			"experiences": []
+			"experiences": [
+				"Sourced and managed 5 projects for local startups. Project demands included e-Learning platform with file and video management, messaging, and payment. Completed 4 projects through 2 full quarters of operation with over $10k in revenue.",
+				"Implemented complex React frontend for e-Learning project, using state, effect, and context hooks. UI includes customization with CMS capabilities for administrators. Designed scalable backend on Node.js with a MongoDB database."
+			]
 		},
 		{
 			"company": "Web Dev Carolina",
 			"position": "Co-Founder and Treasurer",
 			"span": "April 2020 - May 2022",
-			"experiences": []
+			"experiences": [
+				"Managed and provided guidance to 5 full-stack development teams. Reviewed code for framework adherence and backend integrations to meet client goals. Solutions included JavaScript frontends using React and Angular frameworks.",
+				"Created a solution to enable scheduling and payments for the client. Used Figma to synthesize client needs and UI/UX. Final deliverable used React, NoSQL Firebase, and RESTful APIs for payment processing and security."
+			]
 		},
 		{
 			"company": "Camping World",
 			"position": "FP&A Intern",
 			"span": "August 2021 - May 2022",
-			"experiences": []
+			"experiences": [
+				"Developed PowerBI dashboards to display live performance metrics on sales teams by location.",
+				"Consolidated revenue forecasting data to inform retail and dealership staffing decisions.",
+				"Designed turnover reporting system, including employee status encoding and monthly retention/turnover metrics."
+			]
 		},
 		{
-			"company": "TAMID",
-			"position": "Investment Committee",
+			"company": "TAMID Fund Management",
+			"position": "Investment Fund",
 			"span": "September 2018 - September 2021",
-			"experiences": []
+			"experiences": [
+				"Prepared market and company research for stock pitches to global fund. Responsible for industry, product portfolio and competitor analysis to support buy/sell recommendation.",
+				"Developed actionable pricing models from ground-up using customized inputs for WACC and DCF rates. Supported modeling process through development, testing, and validation. Presented recommendations to TAMID Global Investment Fund. Focused on competitor/industry analysis and model presentation.",
+				"Buy recommendations accepted for CSCO, FISV, with 23% and 16.5% upsides respectively."
+			]
 		},
 		{
 			"company": "Red Ventures",
 			"position": "Product Analyst",
 			"span": "June - August 2021",
-			"experiences": []
+			"experiences": [
+				"Leveraged Google Analytics data on inline driver performance across Healthline portfolio sites to inform future driver strategy. Utilized insights to estimate a 20% increase in efficiency with a revenue impact of 100k over the next six months.",
+				"Identified user behavior flow interruptions on Healthline Media site and delivered recommendations to maximize purchase conversion. Contributed to top-line growth by advising improved sales conversion tactics.",
+				"Established weekly reporting system to track user engagement and retention for tentpole marketing campaign. Automated analytical steps to highlight significant statistics, resulting in about 45 returned hours over the campaign lifetime."
+			]
 		}
 	]
 }
