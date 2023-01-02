@@ -7,42 +7,19 @@
 /* defaults for if no preference detected */
 
 :root {
+	--backcolor: rgb(235, 235, 235);
+	--forecolor: rgb(35, 35, 35);
+	--accent: rgb(173, 76, 76);
+}
+
+.dark-mode {
 	--forecolor: rgb(235, 235, 235);
 	--backcolor: rgb(35, 35, 35);
-	--accent: rgb(173, 76, 76);
 }
 
 body {
 	background-color: var(--backcolor);
 	color: var(--forecolor);
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		--backcolor: rgb(235, 235, 235);
-		--forecolor: rgb(35, 35, 35);
-	}
-
-	body {
-		background-color: var(--backcolor);
-		color: var(--forecolor);
-	}
-
-	#navbar-img {
-		filter: grayscale(1) invert(100%);
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--forecolor: rgb(235, 235, 235);
-		--backcolor: rgb(35, 35, 35);
-	}
-
-	body {
-		background-color: var(--backcolor);
-		color: var(--forecolor);
-	}
 }
 
 .lighter {
@@ -78,7 +55,6 @@ body {
 	margin-left: 2vw;
 	margin-right: 2vw;
 }
-
 
 #navbar-container {
 	margin: 0px;
@@ -325,6 +301,7 @@ body {
 
 .selected {
 	box-shadow: -2px 0px 0px 0px var(--accent);
+	transition: all .2s;
 }
 
 .tabs-selector:hover {
@@ -349,5 +326,5 @@ li.tabs-selector {
 
 #experience-content-span {
 	margin-top: 1vh;
-	color:rgb(173, 173, 173)
+	color: rgb(173, 173, 173)
 }

@@ -13,11 +13,11 @@ function Landing() {
 		setTimeout(() => {
 			navigate('/home')
 		}, 1.6 * 1000);
-	})
+	}, [])
 
 	return (
 		<div id="center-on-screen" className={`landing-name ` + fade.fade}>
-			<span class="lighter">Hi, I'm</span> Rushil Shah
+			<span className="lighter">Hi, I'm</span> Rushil Shah
 		</div>
 	)
 

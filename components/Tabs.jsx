@@ -38,7 +38,7 @@ function Tabs() {
 					<ul>
 						{exp.experiences[activeIndex].experiences.map((e, ix) => {
 							return (
-								<li>
+								<li key={ix}>
 									{e}
 								</li>
 							)

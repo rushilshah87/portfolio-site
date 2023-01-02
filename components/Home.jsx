@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import HeaderSection from "./HeaderSection";
 import AboutSection from "./AboutSection";
@@ -20,6 +20,35 @@ function Home() {
 			inline: "start"
 		})
 	}
+
+	const [darkMode, setDarkMode] = useState(false)
+
+	useEffect(() => {
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => onSelectMode(e.matches ? true : false));
+		onSelectMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? true : false)
+		return () => {
+			window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
+			});
+		}
+	}, []);
+
+	const onSelectMode = (mode) => {
+		setDarkMode(mode)
+		if (darkMode)
+			document.body.classList.add('dark-mode')
+		else
+			document.body.classList.remove('dark-mode')
+	}
+
+	// useEffect(() => {
+	// 	window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+	// 		const newColorScheme = event.matches ? "dark" : "light";
+	// 	});
+	// }, []);
+
+	// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	// 	setDarkMode(true)
+	// }
 
 	// // hide/show navbar on scroll action - need to make it smooth
 	// var prevScrollpos = window.pageYOffset;
@@ -49,14 +78,17 @@ function Home() {
 						{/* <span className="internal-link nav-link" id="about-link" onClick={(e) => scrollTo(aboutRef)}>
 							<span className="smaller">01.</span> About Me
 						</span> */}
-						<span className="internal-link nav-link" id="experience-link" onClick={(e) => scrollTo(experienceRef)}>
+						<span key={1} className="internal-link nav-link" id="experience-link" onClick={(e) => scrollTo(experienceRef)}>
 							<span className="smaller">01.</span> Experience
 						</span>
-						<span className="internal-link nav-link" id="projects-link" onClick={(e) => scrollTo(projectsRef)}>
+						<span key={2} className="internal-link nav-link" id="projects-link" onClick={(e) => scrollTo(projectsRef)}>
 							<span className="smaller">02.</span> Projects
 						</span>
-						<span className="internal-link nav-link" id="contact-link" onClick={(e) => scrollTo(contactRef)}>
+						<span key={3} className="internal-link nav-link" id="contact-link" onClick={(e) => scrollTo(contactRef)}>
 							<span className="smaller">03.</span> Contact
+						</span>
+						<span key={4} className="internal-link nav-link" id="mode-toggle" onClick={(e) => onSelectMode(!darkMode)}>
+							<span>{darkMode ? "dark" : "light"}</span>
 						</span>
 					</div>
 					<div id="nav-center"></div>
@@ -141,7 +173,7 @@ function Home() {
 					<ContactSection />
 				</div>
 			</div>
-		</div>
+		</div >
 	)
 }
 
