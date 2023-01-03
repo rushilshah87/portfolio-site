@@ -10,11 +10,13 @@
 	--backcolor: rgb(235, 235, 235);
 	--forecolor: rgb(35, 35, 35);
 	--accent: rgb(173, 76, 76);
+	--highlight: rgb(188, 188, 188);
 }
 
 .dark-mode {
 	--forecolor: rgb(235, 235, 235);
 	--backcolor: rgb(35, 35, 35);
+	--highlight: rgb(53, 53, 53);
 }
 
 body {
@@ -115,18 +117,22 @@ body {
 	position: relative;
 	height: 7vh;
 
-	svg {
-		position: relative;
-		padding: 0px !important;
-		stroke: none;
-	}
+	// svg {
+	// 	position: relative;
+	// 	padding: 0px !important;
+	// 	stroke: none;
+	// 	fill: var(--forecolor);
+	// }
 
 	&:hover {
 		width: 5.5vw;
 		transition: width .1s;
 		-webkit-transition: width .1s;
-		/* Safari */
 	}
+}
+
+#navbar-img-path {
+	fill: var(--forecolor)
 }
 
 #social-container {
@@ -150,6 +156,22 @@ body {
 
 #social-container li {
 	margin-bottom: 2vh;
+}
+
+#dark-light-container {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	height: 15vh;
+	width: 10vw;
+	text-align: center;
+}
+
+.mode-icon {
+	width: 24px;
+	height: 24px;
+	fill: var(--forecolor);
+	padding-bottom: 10px;
 }
 
 .social-link {
@@ -305,11 +327,12 @@ body {
 }
 
 .tabs-selector:hover {
-	background-color: rgb(53, 53, 53);
+	background-color: var(--highlight);
 }
 
 li.tabs-selector {
 	padding: 2vh 10px;
+	transition: all .2s;
 }
 
 #experience-content {
@@ -326,5 +349,53 @@ li.tabs-selector {
 
 #experience-content-span {
 	margin-top: 1vh;
-	color: rgb(173, 173, 173)
+	color: rgb(152, 151, 151)
+}
+
+#projects-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.project-card>.overlay {
+	display: none;
+}
+
+#projects-wrapper>.project-card {
+	// border: 1px solid var(--accent);
+	margin: 1vw;
+
+	&:hover {
+		margin: .5vw;
+		transition: all .2s;
+	}
+
+	&:hover .overlay {
+		// transition: all .2s;
+		display: block;
+		height: 100%;
+		width: 100%;
+		background-color: rgb(0, 0, 0);
+		opacity: 85%;
+		text-align: center;
+		color: rgb(235, 235, 235);
+		h3 {
+			margin: 0px;
+			padding-top: 10%;
+		}
+
+		p {
+			margin: 0px;
+			padding-top: 5%
+		}
+
+		.project-links {
+			padding-top: 5%;
+		}
+
+		a {
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+	}
 }
