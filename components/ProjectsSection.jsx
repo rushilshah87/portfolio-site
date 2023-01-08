@@ -34,19 +34,21 @@ function ProjectsSection() {
 			</h1>
 			<div id="projects-wrapper">
 				<div className="project-card" style={projectStyles['webdev']}>
-					<div className="overlay">
+					<div className="overlay project-mask">
 						<h3> Web Dev Carolina </h3>
 						<p>homepage for UNC club</p>
 						<div className="project-links">
 							<inline>
-								<a href="https://github.com/web-dev-carolina/club-site" target="blank">github</a>
+								<a href="https://github.com/web-dev-carolina/club-site" target="blank">
+									github
+								</a>
 								<a href="https://home-c6ab1.web.app" target="blank">link</a>
 							</inline>
 						</div>
 					</div>
 				</div>
 				<div className="project-card" style={projectStyles['zealand']}>
-					<div className="overlay">
+					<div className="overlay project-mask">
 						<h3> Zealand Pinnacle 2021 </h3>
 						<p>event site for pharma company</p>
 						<div className="project-links">
@@ -58,7 +60,7 @@ function ProjectsSection() {
 					</div>
 				</div>
 				<div className="project-card" style={projectStyles['aux']}>
-					<div className="overlay">
+					<div className="overlay project-mask">
 						<h3> Aux Tunes </h3>
 						<p>homepage for startup launching soon</p>
 						<div className="project-links">
@@ -70,7 +72,7 @@ function ProjectsSection() {
 					</div>
 				</div>
 				<div className="project-card" style={projectStyles['feedbak']}>
-					<div className="overlay">
+					<div className="overlay project-mask">
 						<h3> Feedbak </h3>
 						<p>homepage for Chapel Hill-area startup</p>
 						<div className="project-links">
@@ -82,7 +84,7 @@ function ProjectsSection() {
 					</div>
 				</div>
 				<div className="project-card" style={projectStyles['headlesscms']}>
-					<div className="overlay">
+					<div className="overlay project-mask">
 						<h3> Headless CMS </h3>
 						<p>content management user portal </p>
 						<div className="project-links">
@@ -94,7 +96,7 @@ function ProjectsSection() {
 					</div>
 				</div>
 				<div className="project-card" style={projectStyles['meantime']}>
-					<div className="overlay">
+					<div className="overlay project-mask">
 						<h3> Meantime Coffee Co </h3>
 						<p>Chapel Hill student-run coffee shop</p>
 						<div className="project-links">
