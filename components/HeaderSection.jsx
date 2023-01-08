@@ -10,9 +10,10 @@ function HeaderSection() {
 				</h1>
 				<div>
 					<p id="header-intro">
-						Hi. I'm a recent college grad currently working in the finance field.
-						I graduated from UNC Chapel Hill with a BS in Business Admin and a second degree in Computer Science.
-						I love solving problems in code and creating top-notch, visually appealing solutions.
+						Hi. 
+						I'm a recent college grad currently working in the finance field.
+						I graduated from UNC Chapel Hill in May 2022 with a BS in Business Admin and a second degree in Computer Science.
+						{/* I love solving problems in code and creating top-notch, visually appealing solutions. */}
 					</p>
 				</div>
 			</div>

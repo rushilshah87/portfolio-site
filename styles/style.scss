@@ -16,7 +16,7 @@
 .dark-mode {
 	--forecolor: rgb(235, 235, 235);
 	--backcolor: rgb(35, 35, 35);
-	--highlight: rgb(53, 53, 53);
+	--highlight: rgb(65, 65, 65);
 }
 
 body {
@@ -387,7 +387,7 @@ li.tabs-selector {
     text-align: center;
     position: relative;
     background: transparent;
-    margin: 30px 40px 0px 40px;
+    margin: 30px 40px 0px 30px;
     transform: scale(0);
     color: var(--forecolor);
     transition: all 0.5s linear;
@@ -405,7 +405,7 @@ li.tabs-selector {
 }
 .project-card a {
     display: inline-block;
-    text-decoration: none;
+    color: var(--forecolor);
     padding: 7px 14px;
 	opacity: 0;
     transform: scale(0);
@@ -423,4 +423,8 @@ li.tabs-selector {
 .project-card:hover a{ 
     transform: scale(1);
     opacity: 1;
+}
+
+.contact-content {
+	text-align: center;
 }
