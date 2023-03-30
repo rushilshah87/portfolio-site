@@ -12,7 +12,9 @@ function HeaderSection() {
 					<p id="header-intro">
 						Hi. 
 						I'm a recent college grad currently working in the finance field.
+						<br/>
 						I graduated from UNC Chapel Hill in May 2022 with a BS in Business Admin and a second degree in Computer Science.
+						<br/>
 						{/* I love solving problems in code and creating top-notch, visually appealing solutions. */}
 					</p>
 				</div>

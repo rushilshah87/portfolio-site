@@ -5,10 +5,9 @@
 			"position": "Trade & Portfolio Analyst",
 			"span": "June 2022 - Present",
 			"experiences": [
-				"Cracked tapes",
-				"Database work for non-qm",
-				"Developed loan outcome predictor",
-				"RTL risk report"
+				"Prepared investment opportunities for pricing",
+				"Reorganized database structure for new origination assets",
+				"Developed loan performance classifier for fix-and-flip loans using neural network"
 			]
 		},
 		{

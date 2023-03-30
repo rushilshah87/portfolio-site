@@ -125,7 +125,7 @@ function Home() {
 						</a>
 					</li>
 					<li className="side-list-icon email">
-						<a className="social-link social-link--email" id="email" href="mailto:rushil.s.shah@gmail.com">
+						<a className="social-link social-link--email" id="email" href="mailto:rushil.s.shah@outlook.com">
 							<svg className="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
 								<title>Email</title>
 								<g className="social-group" fill="none" fillRule="evenodd">
