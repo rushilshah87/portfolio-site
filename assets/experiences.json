@@ -5,9 +5,9 @@
 			"position": "Trade & Portfolio Analyst",
 			"span": "June 2022 - Present",
 			"experiences": [
-				"Prepared investment opportunities for pricing",
-				"Reorganized database structure for new origination assets",
-				"Developed loan performance classifier for fix-and-flip loans using neural network"
+				"Prepared investment opportunities for pricing.",
+				"Reorganized database structure for new origination assets.",
+				"Developed loan performance classifier for fix-and-flip loans using neural network."
 			]
 		},
 		{
@@ -30,7 +30,7 @@
 		},
 		{
 			"company": "Camping World",
-			"position": "FP&A Intern",
+			"position": "Corp Dev Intern",
 			"span": "August 2021 - May 2022",
 			"experiences": [
 				"Developed PowerBI dashboards to display live performance metrics on sales teams by location.",
